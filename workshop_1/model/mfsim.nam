@@ -1,9 +1,0 @@
-BEGIN options
-  CONTINUE
-  NOCHECK
-  MEMORY_PRINT_OPTION  all
-END options
-
-BEGIN exchanges
-END exchanges
-
