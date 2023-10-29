@@ -834,7 +834,7 @@ def ws5_model1(ws5,gis_f,model_f,plots_f):
     spit = os.path.join(gis_f,"spit_outer_poly.shp")
     spit_nodes = get_bnodes(spit)
     
-    drn5_pdata = [((lay,node),mg.top[node],0.001,"spit") for node in spit_nodes]
+    drn5_pdata = [((lay,node),mg.top[node]+200,0.001,"spit") for node in spit_nodes]
     drn5_period={}
     drn5_period[0]=drn5_pdata
     drn5 = flopy.mf6.ModflowGwfdrn(gwf,boundnames=True,save_flows=True, maxbound=len(drn5_pdata),\
